@@ -1,0 +1,398 @@
+/* Framework.CSS*/
+
+/*-------------*/
+/*----Reset----*/ 
+/*-------------*/
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	outline: none;
+	font-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	-moz-text-size-adjust: none;
+	-ms-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+*:focus {
+	outline: none;
+}
+
+*,*:after,*:before {	
+    -webkit-box-sizing: border-box;	
+    -moz-box-sizing: border-box;	
+    box-sizing: border-box;	
+    padding: 0;	
+    margin: 0;
+}
+
+.all-elements *{
+    -webkit-text-size-adjust:none;
+    -webkit-transform: translateZ(0);   
+	min-height:auto;
+	max-height:auto;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x:hidden;
+}
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+a:hover{
+	text-decoration:none!important;
+}
+
+::selection {
+	background-color:#CCC;
+	color: #000;
+}
+
+input{vertical-align:middle; -webkit-appearance:none;}
+input[type="text"], input[type="password"]{-webkit-appearance:none}
+input[type="checkbox"]{-webkit-appearance:checkbox;-webkit-border-radius:0}
+input:checked[type="checkbox"]{-webkit-appearance:checkbox}
+input[type="radio"]{border:none;-webkit-appearance:none}
+button,input[type="button"],input[type="submit"],input[type="reset"],input[type="file"]{-webkit-appearance:button;border-radius:0}
+textarea{-webkit-appearance:none}
+select{-webkit-appearance:menulist-text}
+textarea, input { outline: none; }
+
+
+
+/*------------------*/
+/*------------------*/
+/*----Typography----*/ 
+/*------------------*/
+/*------------------*/
+
+p {
+	line-height: 30px;
+	margin-bottom: 30px;
+	font-size:14px;
+}
+
+p > a {
+	display: inline;
+	text-decoration: none;
+}
+
+p > a:hover {
+	text-decoration: underline;
+}
+
+p > span {
+	display: inline;
+}
+
+p strong{
+    font-size:15px;
+    color:#1f1f1f;
+}
+
+span > a {
+	display: inline;
+}
+
+a > span {
+	display: inline;
+}
+
+a {
+    color:#2980b9;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+strong a, em a{
+    display:inline;
+}
+
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+	display: inline;
+}
+
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	background-color: #f6f6f6;
+	border-left: 1px solid #e9e9e9;
+	border-top: 1px solid #e9e9e9;
+	width: 100%;
+	clear: both;
+	margin-bottom: 12px;
+}
+
+thead {
+	border-collapse: separate;
+	border-spacing: 0;
+	background-color: #f6f6f6;
+	border-left: 1px solid #e9e9e9;
+	border-top: 1px solid #e9e9e9;
+	width: 100%;
+	clear: both;
+	margin-bottom: 12px;
+}
+
+th {
+	vertical-align: middle;
+	border-bottom: 1px solid #e9e9e9;
+	border-right: 1px solid #e9e9e9;
+	font-weight: bold;
+	color: #555;
+	background-color: #f6f6f6;
+}
+
+tr {
+	line-height: 18px;
+}
+
+td {
+	border-right: 1px solid #e9e9e9;
+	border-bottom: 1px solid #e9e9e9;
+	text-align: center;
+	color: #666;
+	padding-top: 9px;
+	padding-bottom: 9px;
+	line-height: 18px;
+	vertical-align: middle;
+	background-color: #fdfdfd;
+}
+
+tr:hover > td {
+	background: #fff;
+}
+
+ul {
+	margin-bottom: 30px;
+}
+
+ul ul{
+    margin-bottom:5px;
+}
+
+ol ol{
+    margin-bottom:5px;
+}
+
+ol {
+	margin-bottom: 30px;
+}
+li {
+	line-height: 24px;
+	margin-bottom:5px;
+}
+ol > li:last-child, ul > li:last-child {
+    margin-bottom:0px;	
+}
+
+ul,ol,li{list-style:none; margin:0; padding:0}
+
+
+/*----------------------*/
+/*---Heading Settings---*/
+/*----------------------*/
+
+h1, h2, h3, h4, h5, h6{
+    font-family:'Roboto', sans-serif;
+    color:#1f1f1f;
+    margin-bottom:10px;
+}
+
+.sub-heading{
+    color:#4c4c4c;
+    font-weight:500;
+}
+
+.small-heading{
+    font-size:12px;
+    margin-top:-10px;
+    margin-bottom:10px;
+    display:block;
+}
+
+h1{
+    font-size:24px;
+    line-height:36px;
+    font-weight:700;
+}
+
+h2{
+    font-size:22px;
+    line-height:44px;
+    font-weight:700;
+}
+
+h3{
+    font-size:20px;
+    line-height:22px;
+    font-weight:700;
+}
+
+h4{
+    font-size:18px;
+    line-height:22px;
+    font-weight:700;
+}
+
+h5{
+    font-size:16px;
+    line-height:20px;
+    font-weight:700;
+}
+
+h6{
+    font-size:14px;
+    line-height:30px;
+    font-weight:800;
+}
+
+body{
+    font-size:14px;
+    font-family:'Roboto', sans-serif;
+    line-height:30px;
+    font-weight:400;
+    color:#666666;
+}
+
+.highlighted{padding:4px 10px; margin-bottom:5px;}
+
+/*-------------------------------*/
+/*---Lists and Font Icon Lists---*/
+/*-------------------------------*/
+
+.font-icon-list li{
+	list-style:none;
+	padding-left:0px;
+    margin-left:-20px;
+	color:#666666;
+	line-height:30px;
+}
+
+.font-icon-list li a{
+	color:#666666;	
+}
+
+.icon-list li a{
+	color:#666666;	
+}
+
+.font-icon-list i{
+	margin-right:10px;	
+    width:30px;
+}
+	
+
+.icon-list{
+    list-style: none;
+    padding-left:0px;
+}
+
+.icon-list i{
+    width:20px;
+    text-align:center;
+    margin-left:-5px;
+}
+
+.icon-list ul{
+    padding-left:40px;
+}
+
+
+
+/*--------------------*/
+/*---Table Settings---*/
+/*--------------------*/
+
+.table{
+	width:100%;
+	margin-bottom:35px;
+}
+
+.table-title{
+	font-family:'Dosis', sans-serif;
+	font-size:12px;
+}
+
+.table-sub-title{
+	font-family:'Dosis', sans-serif;
+	font-weight:bold;
+	font-size:12px;
+}
+
+.price{
+	font-size:12px;
+}
+
+.small-price{
+	position:absolute;
+	margin-left:0px;
+	font-size:10px;
+	margin-top:-3px!important;
+}
+
+.table {
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#eaebec;
+	border:#ccc 1px solid;
+	margin-bottom:25px;
+}
+
+.table th {
+	padding:21px 25px 22px 25px;
+	border-bottom:1px solid #e0e0e0;
+}
+
+.table th:first-child{
+	text-align: center;
+	padding-left:20px;
+}
+
+.table tr{
+	text-align: center;
+	padding-left:20px;
+}
+
+.table tr td:first-child{
+	text-align: left;
+	padding-left:20px;
+	border-left: 0;
+}
+
+.table tr td {
+	padding:14px;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid #e0e0e0;
+	border-left: 0px solid #e0e0e0;
+}
+
+.table tr.even td{
+	background: #efefef;
+}
+
+.table tr:last-child td{
+	border-bottom:0;
+}
+
+.table tr:hover td{
+	background: #f8f8f8;
+}
+
+.table-heading{
+	padding-top:10px;
+	padding-bottom:15px;
+}
+
+.table-text{
+	color:#6f6f6f;
+}

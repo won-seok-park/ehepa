@@ -1,0 +1,16 @@
+
+body {
+    background: #FFF;
+    color: #000;
+    font-family:"맑은고딕","Malgun Gothic","돋움",sans-serif;
+	  font-size: 13px;
+    line-height: 1.2;
+}
+
+#loginHeader2{position: relative; width:100%; height:80px; margin-top:10px;}
+#loginHeader2 .login-logo {position:absolute; left:24px; top:16px;}
+#loginHeader2 .login-BMSlogo {position:absolute; right:24px; top:40px; }
+.s-list {padding:10px;}
+.s-list h1{font-size:20px; font-weight:700;line-height:40px;border-bottom:1px solid #000; margin-top:20px;}
+.s-list ul li{line-height:22px; padding:15px 0; border-bottom:1px solid #000;}
+.s-list ul li a{color:#000; font-weight:700; text-decoration:none;}
